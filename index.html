@@ -6,23 +6,409 @@
     
     <!-- CRITICAL SEO META TAGS -->
     <title>Professional Sofa & Mattress Cleaning Beylikdüzü | Kärcher Deep Cleaning</title>
-    <meta name="description" content="Professional deep extraction sofa, armchair, and mattress cleaning in Beylikdüzü. We combine German-engineered Kärcher equipment with safe cleaning solutions. Friendly EN & TR support." />
+    <meta name="description" content="Professional deep extraction sofa, armchair, and mattress cleaning in Beylikdüzü. We combine German engineered Kärcher equipment with safe cleaning solutions. Friendly EN & TR support." />
     <meta name="keywords" content="sofa cleaning beylikduzu, mattress cleaning beylikduzu, deep upholstery cleaning, couch washing, mattress mite removal, English speaking cleaner, химчистка диванов бейликдюзю, تنظيف كنب في بيليكدوزو, koltuk yikama beylikduzu" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Sofa Cleaning Beylikdüzü" />
     
-    <!-- Open Graph for Social Sharing / Local Indexes -->
+    <!-- Open Graph for Social Sharing -->
     <meta property="og:title" content="Professional Sofa & Mattress Cleaning in Beylikdüzü" />
-    <meta property="og:description" content="German-engineered Kärcher deep extraction technology for sofas, mattresses, and armchairs in Beylikdüzü. Eco-friendly solutions, English & Turkish support." />
+    <meta property="og:description" content="German engineered Kärcher deep extraction technology for sofas, mattresses, and armchairs in Beylikdüzü. Eco friendly solutions, English & Turkish support." />
     <meta property="og:type" content="website" />
     
     <!-- Google Fonts for Clean, Trustworthy Aesthetic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet font-display-swap">
+
+    <!-- Tailwind Play CDN for immediate offline/direct execution -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              turkuaz: {
+                DEFAULT: '#00a8b5',
+                light: '#f0fbfb',
+                dark: '#007c85',
+                deep: '#015c63'
+              },
+              cozy: {
+                gold: '#b59223',
+                light: '#fefcf6',
+                accent: '#e5c158'
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Smooth tab transition */
+      .lang-tab-content {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+      }
+      .lang-tab-content.active {
+        display: block;
+        opacity: 1;
+      }
+    </style>
   </head>
-  <body class="bg-white text-slate-900 antialiased font-sans">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col justify-between min-h-screen relative overflow-x-hidden">
+
+    <!-- Structural Top Accent Line (Clean Water Turkuaz) -->
+    <div class="absolute top-0 left-0 w-full h-1.5 bg-turkuaz z-50"></div>
+
+    <!-- Cozy & Trust-oriented Gentle Background Blurs -->
+    <div class="absolute top-0 left-0 right-0 h-[450px] bg-gradient-to-b from-turkuaz-light/60 via-white/40 to-transparent -z-10 pointer-events-none"></div>
+    <div class="absolute top-40 right-[-100px] w-96 h-96 bg-turkuaz-light/40 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+    <div class="absolute top-12 left-[-100px] w-80 h-80 bg-cozy-light rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+
+    <!-- HEADER SECTION -->
+    <header class="w-full max-w-6xl mx-auto px-6 pt-8 pb-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-200/60 bg-white/70 backdrop-blur-xs sticky top-0 z-40">
+      <div class="flex items-center gap-3">
+        <!-- Brand Icon -->
+        <div class="w-10 h-10 rounded-lg bg-turkuaz-light border border-turkuaz/20 flex items-center justify-center text-turkuaz-dark font-extrabold text-lg shadow-sm">
+          S
+        </div>
+        <div class="text-center sm:text-left">
+          <span class="font-extrabold text-lg tracking-wide text-slate-900 block leading-tight uppercase">
+            Sofa<span class="text-turkuaz">Cleaning</span>
+          </span>
+          <span class="text-[10px] uppercase tracking-widest text-turkuaz-dark font-extrabold block">
+            Professional Service
+          </span>
+        </div>
+      </div>
+
+      <!-- Local Area Info & Domain Banner -->
+      <div class="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold text-slate-600">
+        <span class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 border border-slate-200/40">
+          <svg class="w-3.5 h-3.5 text-turkuaz" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+          Beylikdüzü & Neighborhoods
+        </span>
+        <span class="hidden sm:inline text-slate-300">|</span>
+        <span class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-turkuaz-light text-turkuaz-dark font-bold border border-turkuaz/10">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9.9-3.75a9 9 0 010 7.5M10.1 8.25a9 9 0 010 7.5M3 12a9 9 0 019-9m-9 9a9 9 0 009 9"></path>
+          </svg>
+          sofacleaningbeylikduzu.com
+        </span>
+      </div>
+    </header>
+
+    <!-- MAIN COMPONENT -->
+    <main class="w-full max-w-4xl mx-auto px-6 py-12 md:py-16 flex-grow flex flex-col items-center text-center">
+      
+      <!-- Coming Soon Status Badge -->
+      <div class="mb-6">
+        <div class="bg-turkuaz-light px-4 py-1.5 rounded-full border border-turkuaz/20 shadow-xs inline-flex items-center gap-2">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-turkuaz opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-turkuaz"></span>
+          </span>
+          <span class="text-turkuaz-dark text-xs font-bold uppercase tracking-wider">
+            Service Portal Coming Soon
+          </span>
+        </div>
+      </div>
+
+      <!-- H1 Main Heading strictly requested -->
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight text-slate-900">
+        Professional Sofa & Mattress Cleaning <br class="hidden sm:block" />
+        <span class="text-turkuaz">in Beylikdüzü</span>
+      </h1>
+
+      <!-- Main Text strictly requested -->
+      <p class="max-w-2xl text-base md:text-lg text-slate-600 leading-relaxed font-normal mb-10 bg-white/40 p-5 rounded-2xl border border-slate-200/50 backdrop-blur-xs">
+        We provide professional deep extraction cleaning for your sofas, mattresses, and armchairs. We combine German engineered Kärcher equipment with effective, safe cleaning solutions to ensure a hygienic home for your family. Fast, reliable, and thorough service.
+      </p>
+
+      <!-- Highlighted Feature Banner -->
+      <div class="w-full max-w-2xl bg-white border border-turkuaz/15 hover:border-turkuaz/30 rounded-2xl p-5 shadow-sm mb-12 flex flex-col sm:flex-row items-center gap-4 text-left transition-all">
+        <div class="w-12 h-12 rounded-full bg-turkuaz-light flex items-center justify-center shrink-0 border border-turkuaz/10">
+          <svg class="w-6 h-6 text-turkuaz" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-cozy-gold uppercase tracking-wider block">Featured Technology</span>
+          <p class="text-sm text-slate-900 font-semibold mt-0.5">
+            Premium German Engineered Equipment: Deep Extraction Technology
+          </p>
+          <p class="text-xs text-slate-500 font-normal mt-1 leading-relaxed">
+            Our high suction deep washing technology forces pristine water down to the deeper upholstery materials, lifting set in grit, allergens, skin flakes, and unpleasant odors instantly.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature Grid strictly matching requested items -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-3xl mb-8">
+        
+        <!-- Support Feature -->
+        <div class="p-5 bg-white border border-slate-200/80 rounded-xl flex items-start gap-4 hover:shadow-xs transition-all text-left">
+          <div class="w-10 h-10 rounded-lg bg-turkuaz-light text-turkuaz font-bold text-sm shrink-0 flex items-center justify-center border border-turkuaz/10 font-mono">
+            EN
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-slate-900">EN & TR</h4>
+            <p class="text-xs text-slate-500 mt-1 font-normal leading-relaxed">
+              English & Turkish speaking support. Friendly communication with zero language barriers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Technology Feature -->
+        <div class="p-5 bg-white border border-slate-200/80 rounded-xl flex items-start gap-4 hover:shadow-xs transition-all text-left">
+          <div class="w-10 h-10 rounded-lg bg-cozy-light flex items-center justify-center text-lg shrink-0 border border-cozy-gold/10">
+            🇩🇪
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-slate-900">German Engineered</h4>
+            <p class="text-xs text-slate-500 mt-1 font-normal leading-relaxed">
+              Professional German engineered deep cleaning technology utilizing authentic Kärcher extractors for maximum performance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Solutions Feature -->
+        <div class="p-5 bg-white border border-slate-200/80 rounded-xl flex items-start gap-4 hover:shadow-xs transition-all text-left">
+          <div class="w-10 h-10 rounded-lg bg-turkuaz-light flex items-center justify-center text-lg shrink-0 border border-turkuaz/10">
+            🧼
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-slate-900">Eco Friendly Solutions</h4>
+            <p class="text-xs text-slate-500 mt-1 font-normal leading-relaxed">
+              Eco friendly and safe cleaning solutions. Completely non toxic, pet safe, and baby safe detergents for your peace of mind.
+            </p>
+          </div>
+        </div>
+
+        <!-- Local Area Feature -->
+        <div class="p-5 bg-white border border-slate-200/80 rounded-xl flex items-start gap-4 hover:shadow-xs transition-all text-left">
+          <div class="w-10 h-10 rounded-lg bg-cozy-light flex items-center justify-center text-lg shrink-0 border border-cozy-gold/10">
+            📍
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-slate-900">Local Service Coverage</h4>
+            <p class="text-xs text-slate-500 mt-1 font-normal leading-relaxed">
+              Serving Beylikdüzü and surrounding areas. Fast dispatch to Yakuplu, Kavaklı, Marina, and nearby neighborhoods.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Indicator Tag -->
+      <div class="flex items-center gap-1.5 text-xs text-slate-500 font-medium px-4 py-2 rounded-lg bg-white border border-slate-200/60 shadow-xs max-w-sm mt-4">
+        <svg class="w-4 h-4 text-turkuaz" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.317-1.317a4.5 4.5 0 00-6.364 0z"></path>
+        </svg>
+        <span>Your trust is our greatest asset. Local. Safe. Professional.</span>
+      </div>
+
+    </main>
+
+    <!-- MULTILINGUAL LOCAL SEO INDEX -->
+    <section id="multilingual-seo-guides" class="w-full bg-white border-t border-slate-200 py-12 px-6">
+      <div class="max-w-4xl mx-auto">
+        
+        <div class="text-center mb-8">
+          <span class="text-[10px] uppercase tracking-widest text-turkuaz font-extrabold block mb-1">Local Resource Guides</span>
+          <h2 class="text-xs text-slate-500 font-medium max-w-md mx-auto">
+            Select your language to browse professional support guidelines and local coverage information.
+          </h2>
+          
+          <!-- Language Tabs -->
+          <div class="flex items-center justify-center gap-2 mt-4 flex-wrap">
+            <button onclick="switchLanguage('en')" id="btn-en" class="px-3 py-1.5 rounded-lg text-xs font-bold tracking-wide transition-all bg-turkuaz-light text-turkuaz-dark border border-turkuaz/25 shadow-xs">
+              English Guide
+            </button>
+            <button onclick="switchLanguage('ru')" id="btn-ru" class="px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all text-slate-400 hover:text-slate-600 hover:bg-slate-50">
+              Русский (Химчистка)
+            </button>
+            <button onclick="switchLanguage('ar')" id="btn-ar" class="px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all text-slate-400 hover:text-slate-600 hover:bg-slate-50">
+              العربية (تنظيف كنب)
+            </button>
+            <button onclick="switchLanguage('tr')" id="btn-tr" class="px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all text-slate-400 hover:text-slate-600 hover:bg-slate-50">
+              Türkçe Başvuru
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Content Boxes -->
+        <div class="bg-slate-50 border border-slate-200 p-6 md:p-8 rounded-2xl max-w-3xl mx-auto text-xs sm:text-sm leading-relaxed text-slate-600 block">
+          
+          <!-- English Content -->
+          <div id="content-en" class="lang-tab-content active space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <h3 class="font-bold text-slate-900 text-sm">Professional Sofa & Mattress Cleaning Guide</h3>
+              <span class="text-[9px] font-bold text-turkuaz bg-turkuaz-light px-2.5 py-0.5 rounded uppercase tracking-wider">English</span>
+            </div>
+            <p class="font-light">
+              Homeowners trust us for supreme <strong class="font-semibold text-slate-900">sofa cleaning beylikduzu</strong> and experienced <strong class="font-semibold text-slate-900">mattress cleaning beylikduzu</strong>. With our <strong class="font-semibold text-slate-900">deep upholstery cleaning</strong> processes, we tackle rigorous stains, sweat residues, dust allergens, and deep pet dander. Experience pristine hygiene on your fabric chairs, modular couches, and bed mattresses with professional friendly local cleaner support.
+            </p>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 pt-2 text-[11px] text-slate-500 font-medium">
+              <span class="flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-turkuaz" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                German engineered vacuuming
+              </span>
+              <span>•</span>
+              <span class="flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-turkuaz" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                Pet safe extraction solutions
+              </span>
+            </div>
+          </div>
+
+          <!-- Russian Content -->
+          <div id="content-ru" class="lang-tab-content space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <h3 class="font-bold text-slate-900 text-sm">Химчистка диванов и матрасов в Бейликдюзю</h3>
+              <span class="text-[9px] font-bold text-turkuaz bg-turkuaz-light px-2.5 py-0.5 rounded uppercase tracking-wider">Русский</span>
+            </div>
+            <p class="font-light">
+              Качественная и доступная <strong class="font-semibold text-slate-900">химчистка диванов бейликдюзю</strong> готова вернуть вашей домашней мягкой мебели первозданную свежесть. Мы проводим глубокую влажную чистку мягких кресел, матрасов, ковровых покрытий и стульев. Профессиональное немецкое оборудование позволяет удалить въевшиеся пятна чая, кофе, следы домашних животных и пылевых клещей за один визит.
+            </p>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 pt-2 text-[11px] text-slate-500 font-medium">
+              <span class="flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-turkuaz" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                Безопасная био-химия
+              </span>
+              <span>•</span>
+              <span class="flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-turkuaz" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                Удаление неприятных запахов
+              </span>
+            </div>
+          </div>
+
+          <!-- Arabic Content -->
+          <div id="content-ar" class="lang-tab-content space-y-4" dir="rtl">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3" dir="rtl">
+              <h3 class="font-bold text-slate-900 text-sm">خدمات تنظيف كنب متكاملة في بيليكدوزو</h3>
+              <span class="text-[9px] font-bold text-turkuaz bg-turkuaz-light px-2.5 py-0.5 rounded uppercase tracking-wider" dir="ltr">العربية</span>
+            </div>
+            <p class="font-light leading-relaxed">
+              نحن نوفر لكم خدمة <strong className="font-semibold text-slate-900">تنظيف كنب في بيليكدوزو</strong> عالية الجودة بالاعتماد على أحدث أجهزة الاستخلاص والشفط العميق من ماركة كارشر الألمانية. نقوم بإزالة البقع الداكنة والأوساخ وعث الفراش والروائح بشكل آمن تماماً على الأطفال والحيوانات الأليفة مع توفير دعم باللغتين التركية والإنجليزية لتسهيل تواصلكم.
+            </p>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 pt-2 text-[11px] text-slate-500 font-medium justify-start">
+              <span class="flex items-center gap-1 justify-start">
+                <svg class="w-3.5 h-3.5 text-turkuaz ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                مواد صديقة للبيئة
+              </span>
+              <span class="mx-2">•</span>
+              <span class="flex items-center gap-1 justify-start">
+                <svg class="w-3.5 h-3.5 text-turkuaz ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                تنظيف المراتب والكنب بالكامل
+              </span>
+            </div>
+          </div>
+
+          <!-- Turkish Content -->
+          <div id="content-tr" class="lang-tab-content space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <h3 class="font-bold text-slate-900 text-sm">Koltuk, Kanepe ve Yatak Yıkama Hizmeti</h3>
+              <span class="text-[9px] font-bold text-turkuaz bg-turkuaz-light px-2.5 py-0.5 rounded uppercase tracking-wider">Türkçe</span>
+            </div>
+            <p class="font-light">
+              Beylikdüzü sakinleri için profesyonel koltuk yıkama, kanepe dezenfeksiyonu ve derinlemesine yatak temizleme çözümleri sağlıyoruz. Vakumlu Alman Kärcher makinelerimiz ve bitkisel bazlı deterjanlarımızla koltuk liflerindeki kirleri ve bakterileri tamamen söküp atıyoruz. Evcil hayvan sahipleri ve çocuklu aileler için en güvenli temizlik garantisi!
+            </p>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 pt-2 text-[11px] text-slate-500 font-medium">
+              <span class="flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-turkuaz" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                Kärcher vakumlu temizlik
+              </span>
+              <span>•</span>
+              <span class="flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-turkuaz" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                Bitkisel şampuanlarla ekstraksiyon
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hidden/Organic bottom keywords specifically requested -->
+        <div class="mt-12 pt-6 border-t border-slate-200 mx-auto text-center">
+          <span class="text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-4 font-mono">Sofi Cleaning Local Optimization Index</span>
+          
+          <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[11px] text-slate-400 font-medium">
+            <span class="hover:text-slate-600 transition-colors">sofa cleaning</span>
+            <span class="text-slate-300">•</span>
+            <span class="hover:text-slate-600 transition-colors">mattress cleaning</span>
+            <span class="text-slate-300">•</span>
+            <span class="hover:text-slate-600 transition-colors">deep upholstery cleaning</span>
+            <span class="text-slate-300">•</span>
+            <span class="hover:text-slate-600 transition-colors">couch washing beylikduzu</span>
+            <span class="text-slate-300">•</span>
+            <span class="hover:text-slate-600 transition-colors text-slate-400/90">химчистка диванов бейликдюзю</span>
+            <span class="text-slate-300">•</span>
+            <span class="hover:text-slate-600 transition-colors text-slate-400/90">تنظيف كنب في بيليكدوزو</span>
+            <span class="text-slate-300">•</span>
+            <span class="hover:text-slate-600 transition-colors">koltuk yıkama beylikdüzü</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="w-full bg-slate-100 border-t border-slate-200 py-10 px-6 text-center text-xs text-slate-500">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-2">
+          <span class="font-extrabold tracking-wide text-slate-800 uppercase">Sofa Cleaning Beylikdüzü</span>
+          <span class="w-1 h-3.5 bg-turkuaz rounded-full"></span>
+          <span class="font-normal text-slate-500">sofacleaningbeylikduzu.com</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-4 text-slate-400 text-xs font-semibold">
+          <span>Official Portal Opening August 2026</span>
+        </div>
+
+        <div>
+          <p class="font-normal text-[11px] text-slate-400">&copy; 2026. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vanilla Javascript Dynamic Tab Swapper -->
+    <script>
+      function switchLanguage(lang) {
+        // Hide all blocks
+        const contents = document.querySelectorAll('.lang-tab-content');
+        contents.forEach(content => {
+          content.classList.remove('active');
+        });
+
+        // Show exact selected block
+        const targetContent = document.getElementById('content-' + lang);
+        if (targetContent) {
+          targetContent.classList.add('active');
+        }
+
+        // Standardize tab button highlights
+        const buttons = document.querySelectorAll('#multilingual-seo-guides button[onclick]');
+        buttons.forEach(button => {
+          button.className = "px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all text-slate-400 hover:text-slate-600 hover:bg-slate-50";
+        });
+
+        const activeButton = document.getElementById('btn-' + lang);
+        if (activeButton) {
+          activeButton.className = "px-3 py-1.5 rounded-lg text-xs font-bold tracking-wide transition-all bg-turkuaz-light text-turkuaz-dark border border-turkuaz/25 shadow-xs";
+        }
+      }
+    </script>
+
   </body>
 </html>
